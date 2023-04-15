@@ -1,25 +1,34 @@
-const add = function() {
+const add = function(a, b) {
+  return a + b
+};
+
+const subtract = function(a, b) {
+	return a - b
+};
+
+const sum = function(numbers) {
+  return numbers.reduce((sum, num) => sum + num, 0)
 	
 };
 
-const subtract = function() {
-	
+const multiply = function(numbers) {
+  return numbers.length ? numbers.reduce((total, num) => total * num) : 0
 };
 
-const sum = function() {
-	
+const power = function(a, b) {
+	return Math.pow(a, b)
 };
 
-const multiply = function() {
-
-};
-
-const power = function() {
-	
-};
-
-const factorial = function() {
-	
+const factorial = function(n) {
+	if (n == 0 || n == 1) {
+    return 1
+  } else {
+    let sum = n
+    for (i = n - 1; i > 1;i--) {
+      sum *= i
+    }
+    return sum
+  }
 };
 
 // Do not edit below this line
